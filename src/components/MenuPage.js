@@ -1,6 +1,5 @@
 import { useMemo, useState } from 'react';
 import { ChevronRight, ChefHat, Search, Utensils } from 'lucide-react';
-import AISmartPlate from './AISmartPlate';
 import Badge from './ui/Badge';
 import Card from './ui/Card';
 import { CATEGORIES } from '../constants/menuData';
@@ -23,8 +22,6 @@ const MenuPage = ({ menu }) => {
 
   return (
     <div className="max-w-7xl mx-auto px-4 py-12">
-      <AISmartPlate menu={menu} />
-
       <div className="mb-12">
         <h2 className="text-3xl font-bold text-gray-900 mb-6 flex items-center gap-3">
           <ChefHat className="text-orange-600" /> Explore Our Menu
