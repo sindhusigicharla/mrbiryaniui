@@ -2,7 +2,7 @@
   "name": "counter",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://sindhusigicharla.github.io/mrbiryani",
+  "homepage": "https://sindhusigicharla.github.io/mrbiryaniui",
   "dependencies": {
     "@testing-library/dom": "^10.4.1",
     "@testing-library/jest-dom": "^6.9.1",
