@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/mrbiryani/static/css/main.9d974b49.css",
+    "main.js": "/mrbiryani/static/js/main.cc072d71.js",
+    "static/js/453.8927d936.chunk.js": "/mrbiryani/static/js/453.8927d936.chunk.js",
+    "index.html": "/mrbiryani/index.html",
+    "main.9d974b49.css.map": "/mrbiryani/static/css/main.9d974b49.css.map",
+    "main.cc072d71.js.map": "/mrbiryani/static/js/main.cc072d71.js.map",
+    "453.8927d936.chunk.js.map": "/mrbiryani/static/js/453.8927d936.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9d974b49.css",
+    "static/js/main.cc072d71.js"
+  ]
+}
