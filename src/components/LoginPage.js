@@ -12,6 +12,10 @@ const LoginPage = ({ setCurrentPage }) => {
 
   const handleLogin = async (e) => {
     e.preventDefault();
+    if (!auth) {
+      setError('Firebase is not configured. Please add your credentials.');
+      return;
+    }
     setError('');
     setIsLoading(true);
 
@@ -35,6 +39,13 @@ const LoginPage = ({ setCurrentPage }) => {
           <h2 className="text-2xl font-black text-gray-900">Admin Login</h2>
           <p className="text-gray-500 text-sm">Secure access for restaurant management</p>
         </div>
+        {!auth && (
+          <div className="mb-4 p-3 bg-amber-50 border border-amber-300 rounded-lg">
+            <p className="text-xs font-semibold text-amber-800">
+              ⚠️ Firebase credentials not configured. Admin features are unavailable.
+            </p>
+          </div>
+        )}
         <form onSubmit={handleLogin} className="space-y-4">
           <div className="space-y-1">
             <label className="text-xs font-bold text-gray-400 uppercase tracking-wider">Username</label>

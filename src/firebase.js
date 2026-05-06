@@ -6,8 +6,20 @@ const firebaseConfig = {
   
 };
 
-// Initialize Firebase
-const app = initializeApp(firebaseConfig);
-export const auth = getAuth(app);
+// Initialize Firebase only if config has required fields
+let app = null;
+let auth = null;
 
+const hasValidConfig = firebaseConfig && Object.keys(firebaseConfig).length > 0 && firebaseConfig.apiKey;
+
+if (hasValidConfig) {
+  try {
+    app = initializeApp(firebaseConfig);
+    auth = getAuth(app);
+  } catch (error) {
+    console.warn('Firebase initialization failed:', error);
+  }
+}
+
+export { auth };
 export default app;

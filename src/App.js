@@ -15,7 +15,13 @@ export default function App() {
   const [menu, setMenu] = useState(INITIAL_MENU);
 
   const handleLogout = async () => {
-    await signOut(auth);
+    if (auth) {
+      try {
+        await signOut(auth);
+      } catch (error) {
+        console.error('Logout error:', error);
+      }
+    }
     setCurrentPage('home');
   };
 
@@ -29,6 +35,8 @@ export default function App() {
   }, [menu]);
 
   useEffect(() => {
+    if (!auth) return;
+
     const unsubscribe = onAuthStateChanged(auth, (user) => {
       setIsAdmin(Boolean(user));
       if (!user) {
