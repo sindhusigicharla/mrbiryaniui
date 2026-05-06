@@ -8,7 +8,7 @@ const Footer = () => (
           <div className="bg-orange-600 p-2 rounded-lg">
             <Utensils className="text-white" size={24} />
           </div>
-          <span className="text-2xl font-black tracking-tight">URBAN BITE</span>
+          <span className="text-2xl font-black tracking-tight">Mr biriyani</span>
         </div>
         <p className="text-gray-400 max-w-sm leading-relaxed">
           Elevating the culinary experience with a perfect blend of tradition and modern
@@ -26,10 +26,10 @@ const Footer = () => (
             <ArrowRight size={14} className="opacity-0 group-hover:opacity-100 -ml-4 transition-all" />
             Reserve Table
           </li>
-          <li className="hover:text-white cursor-pointer transition-colors flex items-center gap-2 group">
+          {/* <li className="hover:text-white cursor-pointer transition-colors flex items-center gap-2 group">
             <ArrowRight size={14} className="opacity-0 group-hover:opacity-100 -ml-4 transition-all" />
             Staff Portal
-          </li>
+          </li> */}
         </ul>
       </div>
       <div>
@@ -48,7 +48,7 @@ const Footer = () => (
       </div>
     </div>
     <div className="max-w-7xl mx-auto px-4 mt-16 pt-8 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center gap-4 text-gray-500 text-[10px] font-bold uppercase tracking-widest">
-      <span>© {new Date().getFullYear()} Urban Bite Restaurant Group</span>
+      <span>© {new Date().getFullYear()} Mr Biriyani Restaurant Group</span>
       <div className="flex gap-6">
         <span className="hover:text-white cursor-pointer">Privacy Policy</span>
         <span className="hover:text-white cursor-pointer">Terms of Service</span>
