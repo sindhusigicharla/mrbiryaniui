@@ -15,7 +15,7 @@ const Hero = () => (
       </h1>
       <p className="text-lg md:text-xl text-gray-200 mb-8 font-light">
         Experience culinary excellence with our curated selection of global cuisines and
-        handcrafted mocktails.
+        handcrafted mocktails
       </p>
       <div className="flex flex-wrap justify-center gap-6 text-sm font-medium">
         <div className="flex items-center gap-2 bg-white/10 backdrop-blur-md px-4 py-2 rounded-full border border-white/20">
